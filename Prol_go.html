@@ -273,9 +273,16 @@ The remaining kidnappers seize Elodie and drag her limp body to their car, their
 }]
 }
 
-[[ A faint sound can be heard at the bus stop]]</tw-passagedata><tw-passagedata pid="25" name=" A faint sound can be heard at the bus stop" tags="" position="3100,600" size="100,100">&#39;Son, are you there? Hello!?&#39; 
+[[ A faint sound can be heard at the bus stop]]</tw-passagedata><tw-passagedata pid="25" name=" A faint sound can be heard at the bus stop" tags="" position="3100,600" size="100,100">{ &#39;Son, are you there? Hello!?&#39; 
 
-END OF PROLOGUE</tw-passagedata><tw-passagedata pid="26" name="Call James" tags="" position="2450,0" size="100,100">{ Elodie&#39;s fingers tremble as she hastily dials James&#39;s number. With each ring, her heart pounds louder in her chest. James answers quickly, his voice tense with anticipation. &#39;What&#39;s up?&#39; he asks, his tone edged with concern.
+END OF PROLOGUE
+
+(live: 1.75s)[{
+	(track: &#39;phone-dead&#39;, &#39;play&#39;)
+    (stop:)\
+}]
+}
+</tw-passagedata><tw-passagedata pid="26" name="Call James" tags="" position="2450,0" size="100,100">{ Elodie&#39;s fingers tremble as she hastily dials James&#39;s number. With each ring, her heart pounds louder in her chest. James answers quickly, his voice tense with anticipation. &#39;What&#39;s up?&#39; he asks, his tone edged with concern.
 
 As soon as Elodie starts explaining the situation, a knot forms in her stomach. Suddenly, the sound of an approaching car cuts through the air, sending a chill down her spine. The car returns, its headlights piercing the darkness like a beacon of impending danger. Four shadowy figures emerge from the vehicle, their presence casting a menacing shadow over the desolate bus stop.
 
@@ -330,6 +337,10 @@ The men close in on her and render her unconscious with a white rag soaked in ch
 END OF PROLOGUE
 
 (track: &#39;heart-rate&#39;, &#39;loop&#39;, false)
+(live: 1.75s)[{
+	(track: &#39;phone-dead&#39;, &#39;play&#39;)
+    (stop:)\
+}]
 }</tw-passagedata><tw-passagedata pid="31" name="Pepper Spray Alone Without Mom" tags="" position="2800,125" size="100,100">{ Elodie grabs her pepper spray from her bag and readies herself as the men approach her. As soon as they come into range, she shoots her pepper spray at one of them, leaving him in agony. The other man begins coughing from the side effects of the spray, while another rushes towards her and tries to punch her. However, he fails due to his eyes being closed from the pepper spray.
 
 As the other two remaining men approach, Elodie feels a surge of panic as she realizes her pepper spray is running out. With each passing second, her heart races faster, her breaths coming in ragged gasps as the realization dawns that she&#39;s defenseless. With her last ounce of strength, Elodie desperately searches her bag for any remnant of spray, but finds none.
@@ -348,6 +359,10 @@ The men close in on her and render her unconscious with a white rag soaked in ch
 END OF PROLOGUE
 
 (track: &#39;heart-rate&#39;, &#39;loop&#39;, false)
+(live: 1.75s)[{
+	(track: &#39;phone-dead&#39;, &#39;play&#39;)
+    (stop:)\
+}]
 }</tw-passagedata><tw-passagedata pid="33" name=" Run without Mom" tags="" position="2800,400" size="100,100">{ Elodie bolts from the bus stop, her heart pounding in her chest as four menacing figures give chase. Her desperate cries for help echo through the deserted streets, but they fall on deaf ears, swallowed by the oppressive silence of the night, save for the relentless footsteps of her pursuers.
 
 With each passing moment, the gap between Elodie and her assailants narrows, the fear gripping her chest like a vice. Finally, one of the men closes in, his hand wrapping around her mouth with a white rag drenched in chloroform.
@@ -434,7 +449,14 @@ stopping-car: https://cdn.discordapp.com/attachments/1167571527563235431/1224455
 
 gun-shot: https://cdn.discordapp.com/attachments/1220820149095895120/1224805795342848021/Gunshot.wav?ex=661ed449&amp;is=660c5f49&amp;hm=e52fab2bfdc01b007bd0f27d6c7e4dc50a20f674f4294164e5ccfbde4b997878&amp;
 
-heart-rate: https://cdn.discordapp.com/attachments/1220820149095895120/1224808749160464434/Heart_Rate.wav?ex=661ed709&amp;is=660c6209&amp;hm=e72d626855fbc8fff15185ff3a7a326eb9b47a244f5dec235f4d85e5afb950ea&amp;</tw-passagedata><tw-passagedata pid="39" name=" Decision in group" tags="" position="2650,600" size="100,100">{ The white car returns to the bus stop and stops abruptly. Four men exit the car, their presence casting a shadow over the already tense atmosphere.
+heart-rate: https://cdn.discordapp.com/attachments/1220820149095895120/1224808749160464434/Heart_Rate.wav?ex=661ed709&amp;is=660c6209&amp;hm=e72d626855fbc8fff15185ff3a7a326eb9b47a244f5dec235f4d85e5afb950ea&amp;
+
+phone-dead: https://cdn.discordapp.com/attachments/1057061465246412850/1227646487433842688/455409__anthonyramirez__phone-off-hook-tone.wav?ex=662929e3&amp;is=6616b4e3&amp;hm=14e0fa872f11f78fa95b9350f0f024678b99532a86c226f274a76cee5a21de5e&amp;</tw-passagedata><tw-passagedata pid="39" name=" Decision in group" tags="" position="2650,600" size="100,100">{ The white car returns to the bus stop and stops abruptly. Four men exit the car, their presence casting a shadow over the already tense atmosphere.
+
+(live: 1s)[{
+	(track: &#39;stopping-car&#39;,&#39;play&#39;)
+    (stop:)\
+}]
 
 {(set: $counter to 10)}
 
