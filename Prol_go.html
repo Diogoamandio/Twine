@@ -16,7 +16,66 @@
 **/
 #audio-overlay{position:fixed;top:0;right:0;left:0;bottom:0;z-index:100000;background:#111}.lds-ring{display:block;position:relative;top:20%;margin:auto;width:20em;height:20em}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:18em;height:18em;margin:6px;border:6px solid #fff;border-radius:50%;-webkit-animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:#fff transparent transparent transparent}.lds-ring div:nth-child(1){-webkit-animation-delay:-.45s;animation-delay:-.45s}.lds-ring div:nth-child(2){-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-ring div:nth-child(3){-webkit-animation-delay:-.15s;animation-delay:-.15s}@-webkit-keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}input#audio-volume{width:100%;margin:2em 0}span#vol-title{position:relative;bottom:-1em;font-size:1rem;float:left}tw-link#audio-mute{display:inline-block;padding:.3em;width:90%;text-decoration:none;color:#111;background:#eee;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #000}tw-link#audio-mute:hover{opacity:.8}tw-link#audio-mute:active{opacity:.6}tw-link#audio-mute span{display:inline-block;width:1em;position:relative;height:1em;top:.2em;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAABF0lEQVR4Ae2VJVREYRSEB3ftuFUaLhF6I22iF7TgLr1XvAc849CwiBac9Xtm3e97cefp/Pec7+mdH0mZrGtMoBomyAEHfjGHXKg07gNxeUS3BuMAqGZswE7YcOIYgqgG7BFlSQgTAgKysC2jNjQmghFQCOpMxq+QmQgmFATU4kcq/YlgfKB1lALUqFSukRIbEwpy4BTZPM/Bu9TaQ362KAsl56sAtSR+Sgv6RCFdr/gjBYiuj65c3J0eNEmXz95TgybocvmoJj3avf5l59L1iD/WglZCP7/uh8zgeQ6epdahaZENFIPCCFvEYNPW4JdNazBGzhkj6caCbSc02DRRu0+8RR/+rb7wx6D505HxCVKvG0zpp+yknHe8MBDkT/s8AAAAAElFTkSuQmCC);background-size:contain}tw-link#audio-mute.muted span{right:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVR4Ae3WsQ0AMAjAsJ7ez9MTGEmlRGL3BJzPq6prw2DDYMNgw2DDYMOwh1kAMUygQIEC2RejANVxnVE9aDOqJ39GVZWqB5Z3r1ndBX5oAAAAAElFTkSuQmCC)}div#audio-volume{float:left}div#audio-controls{font:100% Georgia,serif;font-size:1.5em;position:fixed;width:8em;height:100%;padding:1em 2em;z-index:10000;top:0;left:0;bottom:0;background:#333;color:#eee;transition:left .3s;text-align:center}div#audio-controls.closed{left:-10.5em}div#audio-controls tw-link#audio-panel-toggle{display:inline-block;width:1.5em;position:absolute;height:1.5em;top:0;right:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAYklEQVR4Ae3MsQFAMAAEQMDEagCgN4EuVTrbPcACeUBugDNeSdMQomI0PmYdTEYD9DA5jcVoBKuxGY1kNQ6jGRSaGaIj8gw1aI/KYVUSNqsSzMpiVT2zMjlVN0fqVW5o2luMGHqkQmD9cPYAAAAASUVORK5CYII=);background-size:contain}div#audio-controls.closed tw-link#audio-panel-toggle{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAZElEQVR4Ae3TpwGAMBQAUfrEeHB0cDhcXBSO7ehlgBw9N8BL/YZO95r6uA/UEbOv+ylfHRJ9z1BWLynKJqmWohyS6ijKOygKCpmjZYqXTTA2xUiCsShGAMw8/Q3ArFgFMHek0w3WCaR74eO2YQAAAABJRU5ErkJggg==)}@media screen and (max-width:800px){div#audio-controls.closed{left:-12em}div#audio-controls.closed tw-link#audio-panel-toggle{right:-1.5em}}div#story-menu{margin:1em 0}tw-link.story-menu{width:100%;display:block;font-weight:400;background:#ccc;font-size:.9em;padding:.1em 0;color:#111;border:1px solid #333}tw-link.story-menu.hide{display:none}tw-link.story-menu:hover{opacity:.8}tw-link.story-menu:active{opacity:.6}input[type=range].hal{-webkit-appearance:none;width:100%;margin:2.25px 0}input[type=range].hal:focus{outline:0}input[type=range].hal::-webkit-slider-runnable-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-webkit-slider-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;-webkit-appearance:none;margin-top:-2.25px}input[type=range].hal:focus::-webkit-slider-runnable-track{background:#444}input[type=range].hal::-moz-range-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-moz-range-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer}input[type=range].hal::-ms-track{width:100%;height:15.5px;cursor:pointer;background:0 0;border-color:transparent;color:transparent}input[type=range].hal::-ms-fill-lower{background:#000;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-fill-upper{background:#111;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;height:15.5px}input[type=range].hal:focus::-ms-fill-lower{background:#111}input[type=range].hal:focus::-ms-fill-upper{background:#444}
 /** End of HAL code */
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
+
+/* Usado para colocar o fundo na página*/
+
+tw-story {
+  background-size:cover;
+}
+
+/*Isto dos tags é necessário para mudar a imagem de cena para cena. Vai ser crucial para diferentes renders... */
+
+tw-story[tags~=""] {
+  background-image:url("ENTER YOUR URL HERE");
+  background-size:cover;
+}
+
+/* CSS do conteúdo onde está o texto*/
+
+tw-passage{
+  border-radius: 6px;
+  padding: 25px;
+  text-align: justify;
+}
+
+/* CSS dos links que carregamos para mudar de página*/
+
+tw-link{
+	color: rgb(255 83 83);
+}
+
+/* CSS do hover do link*/
+
+.enchantment-link:hover, tw-link:hover {
+ color: rgb(153, 0, 0);
+}
+
+.visited{
+	color: rgb(255 83 83);
+}
+
+.visited:hover{
+	color: rgb(153, 0, 0);
+}
+
+.sideButtons{
+    position: fixed;
+    z-index: 1;
+    right: 2%;
+    top: 4.5%;
+    width: 18%;
+    text-align: center;
+}
+
+.iconsForOtherButtons{
+	top: 10px;
+    right: 7.5px;
+}
+
+
+#counter{
+	color: rgb(255 83 83);
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
  * Harlowe Audio Library (HAL), by Chapel, v2.3.0
  * for Harlowe 2.1.0 and higher
  * Released under the Unlicense, and dedicated to the public domain.
@@ -115,11 +174,12 @@ Elodie nods and smiles back.
 
 &#39;You two lovebirds are out here alone?&#39; Said one of the men.
 
+(track: &#39;breaking-car&#39;, &#39;play&#39;)
+
 [[Answer them]]
 
 [[Poke James]]
 
-(track: &#39;breaking-car&#39;, &#39;play&#39;)
 </tw-passagedata><tw-passagedata pid="16" name="Say nothing" tags="" position="2150,200" size="100,100">One of the men, his patience wearing thin at Elodie&#39;s silence, tensed visibly. With a sudden jolt, he flung the car door open, the metallic screech slicing through the tense silence of the night, sending shivers down Elodie&#39;s spine. But before he could advance further, the other man, his movements swift as a striking snake, lunged forward and seized his companion&#39;s arm with a vice-like grip, forcibly slamming the door shut with a resounding thud.
 
 In the eerie stillness that followed, the man leaned in towards the window, his features distorted by the shifting shadows cast by the dimly lit dashboard. Despite the tension, his voice remained eerily calm as he addressed Elodie.
@@ -150,7 +210,7 @@ One of the men, his expression darkening, didn&#39;t like Elodie&#39;s response.
 
 The air thickened with palpable tension as James and Elodie exchanged nervous glances, acutely aware of the danger lurking in the shadows.
 
-[[The car goes away || Car leaves]]</tw-passagedata><tw-passagedata pid="21" name=" Car leaves" tags="" position="2400,600" size="100,100">The car drove away, its taillights disappearing into the night, leaving James and Elodie standing in the shadowy embrace of the desolate bus stop. Despite the absence of the vehicle, an unsettling feeling of dread lingered in the air, intensified by the eerie silence that enveloped them.
+[[The car goes away | Car leaves]]</tw-passagedata><tw-passagedata pid="21" name=" Car leaves" tags="" position="2350,600" size="100,100">The car drove away, its taillights disappearing into the night, leaving James and Elodie standing in the shadowy embrace of the desolate bus stop. Despite the absence of the vehicle, an unsettling feeling of dread lingered in the air, intensified by the eerie silence that enveloped them.
 
 &#39;I didn&#39;t like their tone,&#39; James said nervously, casting a wary glance around the dimly lit surroundings, the faint glow of the streetlamp casting long, sinister shadows across the empty pavement.
 
@@ -158,23 +218,21 @@ The air thickened with palpable tension as James and Elodie exchanged nervous gl
 
 &#39;Do you have someone who can pick you up?&#39;
 
-[[Call Mom]]</tw-passagedata><tw-passagedata pid="22" name="Call Mom" tags="" position="2600,600" size="100,100">Elodie picks up the phone from her purse and dials her mom&#39;s number, her fingers trembling with each dial tone. She waits anxiously, her heart pounding in her chest, but there&#39;s no answer. James notices her growing unease as seconds stretch into an eternity.
+[[Call Mom]]</tw-passagedata><tw-passagedata pid="22" name="Call Mom" tags="" position="2500,600" size="100,100">Elodie picks up the phone from her purse and dials her mom&#39;s number, her fingers trembling with each dial tone. She waits anxiously, her heart pounding in her chest, but there&#39;s no answer. James notices her growing unease as seconds stretch into an eternity.
 
 &#39;I&#39;ll call my father,&#39; said James, his voice strained with concern.
 
-The white car returns to the bus stop and stops abruptly. Four men exit the car, their presence casting a shadow over the already tense atmosphere.
-
-[[Grab your pepper spray]]
-
-[[Stay quiet]]
-
+The sound of wheels coming at top speed can be heard in the distance and intense lights are getting closer.
 
 (track: &#39;phone-dial&#39;, &#39;play&#39;)
 
 (live: 7s)[{
 	(track: &#39;stopping-car&#39;,&#39;play&#39;)
     (stop:)\
-}]</tw-passagedata><tw-passagedata pid="23" name="Grab your pepper spray" tags="" position="2800,550" size="100,100">The four men approach maliciously and rush towards Elodie and James. Elodie peppers sprays the closest man, and he screams in pain. However, they don&#39;t stop and continue rushing towards them with their eyes closed. James, affected by the secondary effects of the pepper spray, punches one of the men. Furious, the men grab their knives and subsequently stab James, dropping him to the floor as his blood gushes out.
+}]
+
+[[ You try to make sense of what&#39;s happening | Decision in group]]
+</tw-passagedata><tw-passagedata pid="23" name="Grab your pepper spray" tags="" position="2800,550" size="100,100">The four men approach maliciously and rush towards Elodie and James. Elodie peppers sprays the closest man, and he screams in pain. However, they don&#39;t stop and continue rushing towards them with their eyes closed. James, affected by the secondary effects of the pepper spray, punches one of the men. Furious, the men grab their knives and subsequently stab James, dropping him to the floor as his blood gushes out.
 
 &quot;&#39;Now it&#39;s your turn, you bitch!&#39; snarled one of the men, his voice dripping with venomous rage.
 
@@ -184,14 +242,14 @@ The four men converge on Elodie, their menacing figures closing in as she desper
 
 The kidnappers seize Elodie and drag her limp body to their car.
 
-[[ A faint sound can be heard at the bus stop]]
-
 (track: &#39;pepper-spray&#39;, &#39;play&#39;)
 
 (live: 5s)[{
 	(track: &#39;stabbing&#39;, &#39;play&#39;)
     (stop:)\
 }]
+
+[[ A faint sound can be heard at the bus stop]]
 
 
 
@@ -203,17 +261,17 @@ Meanwhile, realizing they can&#39;t leave any witnesses, one of the kidnappers d
 
 The remaining kidnappers seize Elodie and drag her limp body to their car, their cruel laughter echoing in the desolate silence of the night as they vanish into the darkness, leaving behind a scene of tragedy and terror.
 
-[[ A faint sound can be heard at the bus stop]]
-
 (live: 8s)[{
 	(track: &#39;gun-shot&#39;, &#39;play&#39;)
     (stop:)\
 }]
-</tw-passagedata><tw-passagedata pid="25" name=" A faint sound can be heard at the bus stop" tags="" position="3100,600" size="100,100">&#39;Son, are you there? Hello!?&#39; 
+
+
+[[ A faint sound can be heard at the bus stop]]</tw-passagedata><tw-passagedata pid="25" name=" A faint sound can be heard at the bus stop" tags="" position="3100,600" size="100,100">&#39;Son, are you there? Hello!?&#39; 
 
 
 
-END OF PROLOGUE</tw-passagedata><tw-passagedata pid="26" name="Call James" tags="" position="2450,50" size="100,100">Elodie&#39;s fingers tremble as she hastily dials James&#39;s number. With each ring, her heart pounds louder in her chest. James answers quickly, his voice tense with anticipation. &#39;What&#39;s up?&#39; he asks, his tone edged with concern.
+END OF PROLOGUE</tw-passagedata><tw-passagedata pid="26" name="Call James" tags="" position="2450,0" size="100,100">Elodie&#39;s fingers tremble as she hastily dials James&#39;s number. With each ring, her heart pounds louder in her chest. James answers quickly, his voice tense with anticipation. &#39;What&#39;s up?&#39; he asks, his tone edged with concern.
 
 As soon as Elodie starts explaining the situation, a knot forms in her stomach. Suddenly, the sound of an approaching car cuts through the air, sending a chill down her spine. The car returns, its headlights piercing the darkness like a beacon of impending danger. Four shadowy figures emerge from the vehicle, their presence casting a menacing shadow over the desolate bus stop.
 
@@ -224,7 +282,7 @@ As soon as Elodie starts explaining the situation, a knot forms in her stomach. 
 (live: 7s)[{
 	(track: &#39;stopping-car&#39;,&#39;play&#39;)
     (stop:)\
-}]</tw-passagedata><tw-passagedata pid="27" name="Call Mother" tags="" position="2450,225" size="100,100">Elodie&#39;s fingers tremble violently as she hastily dials her mother&#39;s number, each digit feeling like an eternity as her heart pounds louder with every passing moment. The phone rings relentlessly, but there&#39;s no answer. Panic grips Elodie like a vice, tightening with each unanswered ring, her desperation mounting with every passing second.
+}]</tw-passagedata><tw-passagedata pid="27" name="Call Mother" tags="" position="2450,200" size="100,100">Elodie&#39;s fingers tremble violently as she hastily dials her mother&#39;s number, each digit feeling like an eternity as her heart pounds louder with every passing moment. The phone rings relentlessly, but there&#39;s no answer. Panic grips Elodie like a vice, tightening with each unanswered ring, her desperation mounting with every passing second.
 
 Suddenly, the sound of an approaching car cuts through the air, sending a chill down her spine. The car returns, its headlights piercing the darkness like a beacon of impending danger. Four shadowy figures emerge from the vehicle, their presence casting a menacing shadow over the desolate bus stop.
 
@@ -289,55 +347,57 @@ DATE NIGHT (Elodie and James)
 
 [[Begin | Prol]]
 
-</tw-passagedata><tw-passagedata pid="35" name=" Prol" tags="" position="75,175" size="100,100">It was a cold winter night, the kind that creeps into your bones and refuses to let go. The streets lay almost deserted, with only the occasional passerby braving the chill. The lights from the lampposts flickered weakly, casting ominous shadows that danced across the frost-covered pavement. Every breath hung in the air like a ghostly mist, a tangible reminder of the winter&#39;s icy grip. Elodie and her date, James, stood outside, their cheeks flushed from the cold, after strolling through the quiet town.
+</tw-passagedata><tw-passagedata pid="35" name=" Prol" tags="" position="75,175" size="100,100">{ It was a cold winter night, the kind that creeps into your bones and refuses to let go. The streets lay almost deserted, with only the occasional passerby braving the chill. The lights from the lampposts flickered weakly, casting ominous shadows that danced across the frost-covered pavement. Every breath hung in the air like a ghostly mist, a tangible reminder of the winter&#39;s icy grip. Elodie and her date, James, stood outside, their cheeks flushed from the cold, after strolling through the quiet town.
 
-{
 (track: &#39;ambience-sound&#39;, &#39;loop&#39;, true)
 (track: &#39;ambience-sound&#39;, &#39;playwhenpossible&#39;)
 }
 
 [[They were alone ]]
 
-</tw-passagedata><tw-passagedata pid="36" name="Decision Mother" tags="" position="2600,225" size="100,100">Elodie&#39;s nervousness causes the phone to slip from her trembling fingers, clattering to the floor with an echoing thud as the men continue to close in.
+&lt;div class=&quot;sideButtons&quot;&gt;
+	[[&lt;img src=&quot;https://cdn.discordapp.com/attachments/1057061465246412850/1226687610727174194/iconsTest.png?ex=6625acdd&amp;is=661337dd&amp;hm=4153af938949e8bbf872a02bd7dded83bedbdfc239196eeabafe252c63191ee6&amp;&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="36" name="Decision Mother" tags="" position="2600,200" size="100,100">Elodie&#39;s nervousness causes the phone to slip from her trembling fingers, clattering to the floor with an echoing thud as the men continue to close in.
 
-(set: $counter to 10)
+{(set: $counter to 10)}
 
 You have &lt;span id=&quot;counter&quot;&gt; |amount&gt;[$counter] &lt;/span&gt; seconds to react! What will you do?
 
-(live: 1s)[(set: $counter to it -1)
+{(live: 1s)[(set: $counter to it -1)
 
-(if: $counter is 0)[(go-to:&quot; Mom Phone&quot;)]
+(if: $counter is 0)[(go-to:&quot; Run without Mom&quot;)]
 
-(replace: ?amount)[$counter]]
+(replace: ?amount)[$counter]]}
 
 [[Grab your pepper spray |Pepper Spray Alone Without Mom]]
 
 [[Run | Run without Mom]]
 
-(live: 3s)[{
+{(live: 3s)[{
 	(track: &#39;heart-rate&#39;, &#39;play&#39;)
     (stop:)\
-}]</tw-passagedata><tw-passagedata pid="37" name="Decision James" tags="" position="2600,50" size="100,100">Elodie&#39;s nervousness causes the phone to slip from her trembling fingers, clattering to the floor with an echoing thud as the men continue to close in.
+}]}</tw-passagedata><tw-passagedata pid="37" name="Decision James" tags="" position="2600,0" size="100,100">Elodie&#39;s nervousness causes the phone to slip from her trembling fingers, clattering to the floor with an echoing thud as the men continue to close in.
 
-(set: $counter to 10)
+{(set: $counter to 10)}
 
 You have &lt;span id=&quot;counter&quot;&gt; |amount&gt;[$counter] &lt;/span&gt; seconds to react! What will you do?
 
-(live: 1s)[(set: $counter to it -1)
+{(live: 1s)[(set: $counter to it -1)
 
-(if: $counter is 0)[(go-to:&quot; James Phone&quot;)]
+(if: $counter is 0)[(go-to:&quot;Run&quot;)]
 
-(replace: ?amount)[$counter]]
+(replace: ?amount)[$counter]]}
 
 
 [[Grab your pepper spray |Pepper Spray Alone]]
 
 [[Run]]
 
-(live: 3s)[{
+{(live: 3s)[{
 	(track: &#39;heart-rate&#39;, &#39;play&#39;)
     (stop:)\
-}]</tw-passagedata><tw-passagedata pid="38" name="hal.tracks" tags="" position="225,0" size="100,100">ambience-sound: https://cdn.discordapp.com/attachments/1167571527563235431/1224438342691590154/AmbienceSound.mp3?ex=661d7e11&amp;is=660b0911&amp;hm=89967118a5618444614ab1749e42f807c947033cf615a9d7c3fb8991fe382dff&amp;
+}]}</tw-passagedata><tw-passagedata pid="38" name="hal.tracks" tags="" position="225,0" size="100,100">ambience-sound: https://cdn.discordapp.com/attachments/1167571527563235431/1224438342691590154/AmbienceSound.mp3?ex=661d7e11&amp;is=660b0911&amp;hm=89967118a5618444614ab1749e42f807c947033cf615a9d7c3fb8991fe382dff&amp;
 
 breaking-car: https://cdn.discordapp.com/attachments/1167571527563235431/1224449504649154630/Breaking_Car.wav?ex=661d8877&amp;is=660b1377&amp;hm=e0b8caf2e3c260dda69c32827f3c7aef3c23d205ea57d786fdd672c1f94f0b42&amp;
 
@@ -353,7 +413,132 @@ stopping-car: https://cdn.discordapp.com/attachments/1167571527563235431/1224455
 
 gun-shot: https://cdn.discordapp.com/attachments/1220820149095895120/1224805795342848021/Gunshot.wav?ex=661ed449&amp;is=660c5f49&amp;hm=e52fab2bfdc01b007bd0f27d6c7e4dc50a20f674f4294164e5ccfbde4b997878&amp;
 
-heart-rate: https://cdn.discordapp.com/attachments/1220820149095895120/1224808749160464434/Heart_Rate.wav?ex=661ed709&amp;is=660c6209&amp;hm=e72d626855fbc8fff15185ff3a7a326eb9b47a244f5dec235f4d85e5afb950ea&amp;</tw-passagedata></tw-storydata>
+heart-rate: https://cdn.discordapp.com/attachments/1220820149095895120/1224808749160464434/Heart_Rate.wav?ex=661ed709&amp;is=660c6209&amp;hm=e72d626855fbc8fff15185ff3a7a326eb9b47a244f5dec235f4d85e5afb950ea&amp;</tw-passagedata><tw-passagedata pid="39" name=" Decision in group" tags="" position="2650,600" size="100,100">The white car returns to the bus stop and stops abruptly. Four men exit the car, their presence casting a shadow over the already tense atmosphere.
+
+{(set: $counter to 10)}
+
+You have &lt;span id=&quot;counter&quot;&gt; |amount&gt;[$counter] &lt;/span&gt; seconds to react! What will you do?
+
+{(live: 1s)[(set: $counter to it -1)
+
+(if: $counter is 0)[(go-to:&quot;Stay quiet&quot;)]
+
+(replace: ?amount)[$counter]]}
+
+[[Grab your pepper spray |Grab your pepper spray]]
+
+[[Stay quiet |Stay quiet]]</tw-passagedata><tw-passagedata pid="40" name=" CharacterBios" tags="" position="1100,950" size="100,100">{
+
+&lt;div class=&quot;topInfo&quot;&gt;
+	&lt;div&gt;
+    	&lt;h4&gt;Character Info&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;otherButtons&quot; &gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/1057061465246412850/1226693183925125192/back-arrow.png?ex=6625b20d&amp;is=66133d0d&amp;hm=ada463b763f5ab61060850ee9224f218678db2ae8aca33e877861a842c77cb85&amp;&quot; 	width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; (link: &#39;Go Back&#39;)[(goto: (history:)&#39;s last)]
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;cardDisplay&quot;&gt;
+  &lt;div class=&quot;displayImageContainer&quot;&gt;
+    &lt;img class=&quot;cardImage&quot; src=&quot;https://cdn.discordapp.com/attachments/1057061465246412850/1226945819341619250/image.png?ex=66269d56&amp;is=66142856&amp;hm=cfab694e953ccfb4febc2b8ec5d9dedff057df9153a1dd542fa5346e69edac90&amp;&quot; width=&quot;375&quot; height=&quot;225&quot; id=&quot;ElodieCard&quot;&gt;&lt;img class=&quot;cardImage hidden&quot; src=&quot;https://cdn.discordapp.com/attachments/1057061465246412850/1226953187194441738/image.png?ex=6626a433&amp;is=66142f33&amp;hm=6f793c5862d9105b6d18c35dd9d34e2979ebf699e750d8bcfd874729123cca2e&amp;&quot; width=&quot;375&quot; height=&quot;225&quot; id=&quot;JamesCard&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;chooseCharacterContainer&quot;&gt;
+    Choose the character:&lt;br&gt;
+    &lt;div class=&quot;buttonContainer&quot;&gt;
+        &lt;button class=&quot;buttonCharacter&quot; id=&quot;ElodieButton&quot;&gt;Elodie &lt;strong&gt;♀&lt;/strong&gt;&lt;/button&gt;
+    	&lt;button class=&quot;buttonCharacter&quot; id=&quot;JamesButton&quot;&gt;James ♂&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+
+.buttonContainer{
+ display: grid;
+  width: 100%;
+  justify-items: center; 
+  align-items: center; 
+}
+
+.topInfo{
+	margin: .3em 0 1.6em 0;
+}
+
+.cardDisplay{
+  display: flex;
+}
+
+.displayImageContainer{
+  width: 50%;
+}
+
+.cardImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.chooseCharacterContainer{
+  padding: 15px;
+  width: 50%;
+  text-align: center;
+}
+
+.buttonCharacter{
+  width: 35%;
+}
+
+.buttonCharacter{
+    color: black;
+    border: 2px solid rgb(255 83 83);
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    margin: 15px 0px 0px 0px;
+    border-radius: 8px;
+}
+
+.buttonCharacter:hover{
+  transition-duration: 0.4s;
+  background-color: rgb(255 83 83);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#otherButtons{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: -110%;
+    width: 18%;
+    text-align: center;
+}
+
+&lt;/style&gt;
+
+&lt;script&gt;
+
+document.getElementById(&quot;ElodieButton&quot;).addEventListener(&quot;click&quot;, function() {
+    document.getElementById(&quot;ElodieCard&quot;).classList.remove(&quot;hidden&quot;);
+    document.getElementById(&quot;JamesCard&quot;).classList.add(&quot;hidden&quot;);
+});
+document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&quot;, function() {
+    document.getElementById(&quot;JamesCard&quot;).classList.remove(&quot;hidden&quot;);
+    document.getElementById(&quot;ElodieCard&quot;).classList.add(&quot;hidden&quot;);
+});
+
+&lt;/script&gt;
+  
+}
+  
+  
+  
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
