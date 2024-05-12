@@ -723,18 +723,20 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
   
   
 
-</tw-passagedata><tw-passagedata pid="41" name="Car render" tags="" position="1900,800" size="100,100">&lt;img  class=&quot;render&quot; src=&quot;./Icons/carRender.png&quot;&gt;
+</tw-passagedata><tw-passagedata pid="41" name="Car render" tags="" position="1900,800" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
+  &lt;source src=&quot;Videos/car_approaching_bus_stop.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
 
 &lt;style&gt;
 	.render{
     	position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 15%;
+        left: 20%;
+        width: 70%;
+        height: 70%;
         object-fit: cover;
         
-        animation: waitandfade 6s linear forwards;
+        animation: waitandfade 24s linear forwards;
     }
     
     @-webkit-keyframes waitandfade{
@@ -745,9 +747,7 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
 &lt;/style&gt;
 
 {
-	(track: &#39;breaking-car&#39;, &#39;play&#39;)
-
-	(set: $counter to 6)
+	(set: $counter to 24)
     (live: 1s)[
     	(set: $counter to it -1)
         (if: $counter is 0)[(go-to: &quot;A white car approaches&quot;)]
@@ -809,18 +809,20 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
         (if: $counter is 0)[(go-to: &quot;James walks away&quot;)]
         (replace: ?amount)[$counter]
     ]
-}</tw-passagedata><tw-passagedata pid="44" name=" Car render 2" tags="" position="1900,300" size="100,100">&lt;img  class=&quot;render&quot; src=&quot;./Icons/carRender.png&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="44" name=" Car render 2" tags="" position="1900,300" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
+  &lt;source src=&quot;Videos/car_approaching_bus_stop.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
 
 &lt;style&gt;
 	.render{
     	position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 15%;
+        left: 20%;
+        width: 70%;
+        height: 70%;
         object-fit: cover;
         
-        animation: waitandfade 6s linear forwards;
+        animation: waitandfade 24s linear forwards;
     }
     
     @-webkit-keyframes waitandfade{
@@ -831,9 +833,7 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
 &lt;/style&gt;
 
 {
-	(track: &#39;breaking-car&#39;, &#39;play&#39;)
-
-	(set: $counter to 6)
+	(set: $counter to 24)
     (live: 1s)[
     	(set: $counter to it -1)
         (if: $counter is 0)[(go-to: &quot;A white car approaches the bus stop&quot;)]
@@ -867,18 +867,20 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
         (if: $counter is 0)[(go-to: &quot;They were alone&quot;)]
         (replace: ?amount)[$counter]
     ]
-}</tw-passagedata><tw-passagedata pid="46" name=" end render" tags="" position="3550,350" size="100,100">&lt;img  class=&quot;render&quot; src=&quot;./Icons/carRender.png&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="46" name=" end render" tags="" position="3550,350" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
+  &lt;source src=&quot;Videos/car_approaching_bus_stop.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
 
 &lt;style&gt;
 	.render{
     	position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 15%;
+        left: 20%;
+        width: 70%;
+        height: 70%;
         object-fit: cover;
         
-        animation: waitandfade 6s linear forwards;
+        animation: waitandfade 24s linear forwards;
     }
     
     @-webkit-keyframes waitandfade{
@@ -886,14 +888,7 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
         55% { opacity:1; }
         100% { opacity: 0; }
     }
-&lt;/style&gt;
-
-{
-    (live: 1.75s)[{
-	(track: &#39;phone-dead&#39;, &#39;play&#39;)
-    (stop:)\
-}]
-}</tw-passagedata></tw-storydata>
+&lt;/style&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
