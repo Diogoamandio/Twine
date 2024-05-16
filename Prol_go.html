@@ -144,16 +144,16 @@ tw-link{
 	[[&lt;img src=&quot;./Icons/cardsIcon.png&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
 &lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="6" name=" If you want to" tags="" position="1400,600" size="100,100">James and Elodie walk through the streets once again, this time the bus stop is their destination. While walking, James stops briefly and notices a campaign flyer of the socialist party with Elliot Anderson&#39;s face on it.
+</tw-passagedata><tw-passagedata pid="6" name=" If you want to" tags="" position="1400,675" size="100,100">James and Elodie walk through the streets once again, this time the bus stop is their destination. While walking, James stops briefly and notices a campaign flyer of the socialist party with Elliot Anderson&#39;s face on it.
 
 &#39;For a safer and more prosperous future for our children,&#39; James reads the poster out loud.
 
 &#39;Empty promises, every politician&#39;s motto. I wonder if this time, someone really means it.&#39;
 
 
-[[Elodie laughs | bus station w/ James render ]]
+[[Elodie laughs | Bus Station ]]
 
-[[Elodie nods in disapprovement | bus station w/ James render ]]
+[[Elodie nods in disapprovement | Bus Station ]]
 
 &lt;div class=&quot;sideButtons&quot;&gt;
 	[[&lt;img src=&quot;./Icons/cardsIcon.png&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
@@ -167,25 +167,25 @@ tw-link{
 &lt;div class=&quot;sideButtons&quot;&gt;
 	[[&lt;img src=&quot;./Icons/cardsIcon.png&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="8" name="Me too" tags="" position="1300,200" size="100,100">Elodie approaches James and gives him a hug. James was surprised by the gesture, but he hugs Elodie back.
+</tw-passagedata><tw-passagedata pid="8" name="Me too" tags="" position="1275,275" size="100,100">Elodie approaches James and gives him a hug. James was surprised by the gesture, but he hugs Elodie back.
 
 &#39;Text me when you get home, okay?&#39; said James with a cheerful smile.&quot;
 
 
 Elodie nods and smiles back.
 
-[[James walks away | bus station alone render]]
+[[James walks away |James walks away]]
 
 &lt;div class=&quot;sideButtons&quot;&gt;
 	[[&lt;img src=&quot;./Icons/cardsIcon.png&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="9" name="Sorry, but I didn&#39;t felt a connection" tags="" position="1300,0" size="100,100">James was surprised by Elodie&#39;s response. He was visibly shocked but didn&#39;t take it personally.
+</tw-passagedata><tw-passagedata pid="9" name="Sorry, but I didn&#39;t felt a connection" tags="" position="1275,0" size="100,100">James was surprised by Elodie&#39;s response. He was visibly shocked but didn&#39;t take it personally.
 
 &#39;Well, that&#39;s all right. It was a good night either way,&#39; said James with a sad smile.
 
 &#39;I&#39;ll see you around, Elodie. Take care.&#39;
 
-[[James walks away | bus station alone render]]
+[[James walks away |James walks away]]
 
 &lt;div class=&quot;sideButtons&quot;&gt;
 	[[&lt;img src=&quot;./Icons/cardsIcon.png&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
@@ -516,7 +516,7 @@ DATE NIGHT (Elodie and James)
 (track: &#39;ambience-sound&#39;, &#39;playwhenpossible&#39;)
 }
 
-[[They were alone | street render ]]
+[[They were alone |They were alone]]
 
 &lt;div class=&quot;sideButtons&quot;&gt;
 	[[&lt;img src=&quot;./Icons/cardsIcon.png&quot; width=&quot;50&quot; height=&quot;50&quot; class=&quot;iconsForOtherButtons&quot;&gt; Character Info | CharacterBios]]
@@ -753,63 +753,7 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
         (if: $counter is 0)[(go-to: &quot;A white car approaches&quot;)]
         (replace: ?amount)[$counter]
     ]
-}</tw-passagedata><tw-passagedata pid="42" name=" bus station w/ James render " tags="" position="1500,800" size="100,100">&lt;img  class=&quot;render&quot; src=&quot;./Icons/carRender.png&quot;&gt;
-
-&lt;style&gt;
-	.render{
-    	position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-        animation: waitandfade 6s linear forwards;
-    }
-    
-    @-webkit-keyframes waitandfade{
-    	0% { opacity: 1; }
-        55% { opacity:1; }
-        100% { opacity: 0; }
-    }
-&lt;/style&gt;
-
-{
-	(set: $counter to 6)
-    (live: 1s)[
-    	(set: $counter to it -1)
-        (if: $counter is 0)[(go-to: &quot; Bus Station &quot;)]
-        (replace: ?amount)[$counter]
-    ]
-}</tw-passagedata><tw-passagedata pid="43" name=" bus station alone render" tags="" position="1500,300" size="100,100">&lt;img  class=&quot;render&quot; src=&quot;./Icons/carRender.png&quot;&gt;
-
-&lt;style&gt;
-	.render{
-    	position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-        animation: waitandfade 5s linear forwards;
-    }
-    
-    @-webkit-keyframes waitandfade{
-    	0% { opacity: 1; }
-        55% { opacity:1; }
-        100% { opacity: 0; }
-    }
-&lt;/style&gt;
-
-{
-	(set: $counter to 6)
-    (live: 1s)[
-    	(set: $counter to it -1)
-        (if: $counter is 0)[(go-to: &quot;James walks away&quot;)]
-        (replace: ?amount)[$counter]
-    ]
-}</tw-passagedata><tw-passagedata pid="44" name=" Car render 2" tags="" position="1900,300" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
+}</tw-passagedata><tw-passagedata pid="42" name=" Car render 2" tags="" position="1900,300" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
   &lt;source src=&quot;Videos/car_approaching_bus_stop.mp4&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;
 
@@ -839,35 +783,7 @@ document.getElementById(&quot;JamesButton&quot;).addEventListener(&quot;click&qu
         (if: $counter is 0)[(go-to: &quot;A white car approaches the bus stop&quot;)]
         (replace: ?amount)[$counter]
     ]
-}</tw-passagedata><tw-passagedata pid="45" name=" street render " tags="" position="350,200" size="100,100">&lt;img  class=&quot;render&quot; src=&quot;./Icons/carRender.png&quot;&gt;
-
-&lt;style&gt;
-	.render{
-    	position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-        animation: waitandfade 6s linear forwards;
-    }
-    
-    @-webkit-keyframes waitandfade{
-    	0% { opacity: 1; }
-        55% { opacity:1; }
-        100% { opacity: 0; }
-    }
-&lt;/style&gt;
-
-{
-	(set: $counter to 6)
-    (live: 1s)[
-    	(set: $counter to it -1)
-        (if: $counter is 0)[(go-to: &quot;They were alone&quot;)]
-        (replace: ?amount)[$counter]
-    ]
-}</tw-passagedata><tw-passagedata pid="46" name=" end render" tags="" position="3550,350" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
+}</tw-passagedata><tw-passagedata pid="43" name=" end render" tags="" position="3550,350" size="100,100">&lt;video class=&quot;render&quot; controls autoplay&gt;
   &lt;source src=&quot;Videos/phone_sound_ending.mp4&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;
 
